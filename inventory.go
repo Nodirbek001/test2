@@ -29,3 +29,7 @@ func(i *Inventory) TakeProduct(name string, quantity int){
 		}
 	}
 }
+//git status
+//git add -A
+//it commit -m "commit"
+//git pushclae
