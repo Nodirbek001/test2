@@ -10,5 +10,8 @@ func (api *api) SaveUser(W http.ResponseWriter, r *http.Request) {
 	if err := BodyParser(r, &body); err != nil {
 		HandleErrorResponse(W, 500, "body parse error")
 	}
-	err:=api.userservice
+	err:=api.userservice.SetUser(r.Context(), body)
+	if err!=nill {
+		
+	}
 }
